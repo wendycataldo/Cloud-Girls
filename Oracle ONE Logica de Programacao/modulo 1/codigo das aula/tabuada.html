@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha() {
+		document.write("<br>");		
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+	
+	var numerotabuada = 5;
+	mostra("A tabuada de " + numerotabuada + ":");
+	var contador = 0;
+	for(var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+		contador++;
+		mostra(numerotabuada + " X "+ contador + " = " + numerotabuada * multiplicador);
+	}
+	mostra("FIM");  
+</script>
+
+
+
+

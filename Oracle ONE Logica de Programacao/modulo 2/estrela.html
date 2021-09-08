@@ -1,0 +1,61 @@
+<canvas width="600" height="400"></canvas>
+
+
+<script>
+    
+var tela = document.querySelector("canvas");
+var pincel = tela.getContext("2d");
+
+
+pincel.fillStyle = "lightblue";
+pincel.fillRect(0, 0, 600, 400);
+pincel.strokeStyle = "Black";
+pincel.strokeRect(0, 0, 600, 400);
+
+pincel.fillStyle = "blue"; 
+pincel.beginPath();
+pincel.moveTo(300, 100);
+pincel.lineTo(270, 180);
+pincel.lineTo(330, 180);
+pincel.fill();
+
+pincel.fillStyle = "blue";
+pincel.beginPath();
+pincel.moveTo(200, 200);
+pincel.lineTo(270, 180);
+pincel.lineTo(270, 240);
+pincel.fill();
+
+pincel.fillStyle = "blue";
+pincel.beginPath();
+pincel.moveTo(400, 200);
+pincel.lineTo(330, 180);
+pincel.lineTo(330,240);
+pincel.fill();
+
+pincel.fillStyle = "blue";
+pincel.fillRect(270, 180, 60, 60);
+
+pincel.fillStyle = "blue";
+pincel.beginPath();
+pincel.moveTo(230, 320);
+pincel.lineTo(260, 220);
+pincel.lineTo(300, 270);
+pincel.fill();
+
+pincel.fillStyle = "blue";
+pincel.beginPath();
+pincel.moveTo(300, 270);
+pincel.lineTo(250, 210);
+pincel.lineTo(330, 250);
+pincel.fill();
+
+pincel.fillStyle = "blue";
+pincel.beginPath();
+pincel.moveTo(370 ,320);
+pincel.lineTo(270, 250);
+pincel.lineTo(335, 210);
+pincel.fill();
+
+
+</script>

@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    
+    var num = 20;
+    mostra("Contaguem decrescente de " + num + " ate 0:");
+    while(num >= 0){
+        mostra("Numeros: " + num);
+        num = num - 1;
+    }
+    
+    mostra("Fim!! ");
+   
+</script>

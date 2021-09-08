@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    
+    function anoCopa(n){
+		return Math.round(Math.random() * n);
+    }
+
+    var limite = parseInt(prompt("Entre com a data limite: "));
+    var anoCopa = 1900;
+   
+    while(anoCopa <= limite){
+        mostra("Teve copa em: " + anoCopa)
+        anoCopa = anoCopa + 4;
+    }
+</script>
