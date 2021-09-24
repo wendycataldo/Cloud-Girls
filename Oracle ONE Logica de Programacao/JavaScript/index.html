@@ -16,8 +16,9 @@
 		</header>
 		<main>
 			<section class="container">
-				<h2 class="titulo">Aparecida Nutrição</h2>
-				<ul id="mesagens-erro"></ul>
+				<h2>Aparecida Nutrição</h2>
+				<label for="filtrar-tabela">Filtre:</label>
+				<input type="text" name="filtro" id="filtra-tabel" placeholder="Digite o nome do pacinete">
 				<table>
 					<thead>
 						<tr>
@@ -69,6 +70,9 @@
 						</tr>
 					</tbody>
 				</table>
+
+				<span id="erro-ajax" class="invisivel">Erro ao buscar os pacientes</span>
+				<button id="adicionar-paciente" class="botao bto-principal">Buscar Paciente</button>
 			</section>
 		</main>
 
@@ -98,5 +102,8 @@
         </section>
 		<script src="js/calcula-imc.js"></script>
 		<script src="js/form.js"></script>
+		<script src="js/remover-paciente.js"></script>
+		<script src="js/filtra.js"></script>
+		<script src="js/buscarPaciente.js"></script>
 	</body>
 </html>
